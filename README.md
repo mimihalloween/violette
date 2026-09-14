@@ -1,3 +1,3 @@
-# Violette — Messagerie V5
+# Violette — Messagerie V6
 
-La conversation Serena établit qu'elle connaît l'identité du père et sait qu'il est le père. Elle refuse uniquement d'en révéler le nom. Elle laisse entendre qu'il pourrait être présent à Halloween.
+Serena n'a eu qu'une relation secrète : avec Logan. Elle sait donc que Logan est le père. Elle refuse uniquement de révéler à Violette que le père est Logan, car elle veut protéger le secret de leur relation.
