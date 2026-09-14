@@ -8,4 +8,4 @@ La conversation Logan se déroule la veille de la soirée. Violette lui apprend 
 V9 : alignement forcé des bulles gauche/droite avec conteneurs pleine largeur.
 
 
-V10 : dates harmonisées. Serena : 28-29 octobre. Logan : 30 octobre, veille de la soirée d'Halloween.
+V10 dates : Serena échange avec Violette les 28 et 29 octobre ; Logan échange avec Violette le 30 octobre, veille de la soirée.
