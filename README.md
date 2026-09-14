@@ -1,3 +1,3 @@
-# Violette — Messagerie
+# Violette — Messagerie V5
 
-Boîte de réception avec conversations Serena et Logan. La conversation Serena ne mentionne pas Asher ni de relation avec Asher : le secret porte sur un homme dont Serena refuse de révéler l'identité et dont elle ne sait pas s'il est le père.
+La conversation Serena établit qu'elle connaît l'identité du père et sait qu'il est le père. Elle refuse uniquement d'en révéler le nom. Elle laisse entendre qu'il pourrait être présent à Halloween.
