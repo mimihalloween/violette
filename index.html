@@ -8,13 +8,43 @@
 </head>
 <body>
 <div class="app">
-<header class="topbar">
-<button class="icon" id="backBtn">‹</button>
-<div class="title"><div class="avatar">V</div><div><b>Messages</b><small>Violette</small></div></div>
-<button class="icon">ⓘ</button>
-</header>
-<main id="chat"></main>
-<footer class="composer"><button class="round">＋</button><div class="input">Message…</div><button class="send">➤</button></footer>
+  <section id="inboxView" class="view active">
+    <header class="topbar">
+      <div class="brand">Messages</div>
+      <button class="compose">✎</button>
+    </header>
+    <div class="search">⌕&nbsp;&nbsp;Rechercher</div>
+    <div class="requests">Demandes de messages <span>›</span></div>
+
+    <div class="thread" onclick="openChat('serena')">
+      <div class="avatar serena">S</div>
+      <div class="thread-body">
+        <div class="thread-top"><b>Serena</b><small>11:46</small></div>
+        <div class="preview">Désolée ❤️</div>
+      </div>
+    </div>
+
+    <div class="thread" onclick="openChat('logan')">
+      <div class="avatar logan">L</div>
+      <div class="thread-body">
+        <div class="thread-top"><b>Logan</b><small>mar.</small></div>
+        <div class="preview">Tu viens toujours samedi ?</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="chatView" class="view">
+    <header class="topbar chatbar">
+      <button class="back" onclick="closeChat()">‹</button>
+      <div class="chat-contact">
+        <div class="avatar" id="chatAvatar">S</div>
+        <div><b id="chatName">Serena</b><small id="chatStatus">Actif(ve) il y a 1 h</small></div>
+      </div>
+      <button class="info">ⓘ</button>
+    </header>
+    <main id="chat"></main>
+    <footer class="composer"><button class="round">＋</button><div class="input">Message…</div><button class="send">➤</button></footer>
+  </section>
 </div>
 <script src="app.js"></script>
 </body>

@@ -1,15 +1,18 @@
 *{box-sizing:border-box}
 body{margin:0;background:#e9e9e9;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:#111}
-.app{width:100%;max-width:480px;min-height:100vh;margin:auto;background:#fff;display:flex;flex-direction:column}
-.topbar{height:64px;border-bottom:1px solid #ddd;display:flex;align-items:center;justify-content:space-between;padding:0 14px;position:sticky;top:0;background:#fff;z-index:3}
-.icon{border:0;background:none;font-size:30px}.title{display:flex;align-items:center;gap:10px}.title small{display:block;color:#777;font-size:11px;margin-top:2px}
-.avatar{width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff;font-size:15px;background:linear-gradient(135deg,#d9b2d8,#8e6ea7)}
-#chat{padding:18px 12px 78px;flex:1;overflow:auto;background:#fff}
-.day{display:flex;align-items:center;gap:10px;margin:18px 0 12px;color:#999;font-size:11px}.day:before,.day:after{content:"";height:1px;background:#eee;flex:1}
-.row{display:flex;margin:7px 0}.row.me{justify-content:flex-end}
-.bubble{max-width:78%;padding:10px 13px;border-radius:18px;line-height:1.38;font-size:14px;white-space:pre-wrap}
-.row.them .bubble{background:#efefef;border-bottom-left-radius:6px}.row.me .bubble{background:#e6dcf6;border-bottom-right-radius:6px}
-.meta{font-size:9px;color:#aaa;margin:3px 5px 0}.row.me .meta{text-align:right}
-.composer{position:fixed;bottom:0;width:100%;max-width:480px;height:62px;border-top:1px solid #ddd;background:#fff;display:flex;align-items:center;gap:9px;padding:9px 12px}
-.round,.send{border:0;background:none;font-size:24px}.input{flex:1;background:#f1f1f1;color:#999;border-radius:22px;padding:10px 15px;font-size:14px}
+.app{width:100%;max-width:480px;min-height:100vh;margin:auto;background:#fff}
+.view{min-height:100vh;background:#fff}.view:not(.active){display:none}
+.topbar{height:64px;border-bottom:1px solid #ddd;display:flex;align-items:center;justify-content:space-between;padding:0 16px;position:sticky;top:0;background:#fff;z-index:5}
+.brand{font-size:24px;font-weight:700}.compose,.info,.back{border:0;background:none;font-size:25px}.back{font-size:34px}
+.search{margin:12px 14px;background:#f1f1f1;border-radius:10px;padding:10px 13px;color:#777}
+.requests{padding:12px 16px;color:#777;font-size:13px;border-bottom:1px solid #eee;display:flex;justify-content:space-between}
+.thread{padding:14px 16px;display:flex;align-items:center;gap:12px;border-bottom:1px solid #eee;cursor:pointer}
+.avatar{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+.serena{background:linear-gradient(135deg,#d7a9bb,#9a6d86)}.logan{background:linear-gradient(135deg,#9eafc0,#64768d)}
+.thread-body{flex:1}.thread-top{display:flex;justify-content:space-between}.thread-top small{color:#999;font-size:11px}.preview{margin-top:4px;color:#777;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.chatbar{justify-content:flex-start;gap:10px}.chat-contact{display:flex;align-items:center;gap:9px;flex:1}.chat-contact .avatar{width:38px;height:38px}.chat-contact small{display:block;color:#777;font-size:10px;margin-top:1px}
+#chat{padding:16px 12px 78px;min-height:calc(100vh - 126px);background:#fff}
+.day{display:flex;align-items:center;gap:10px;margin:18px 0 12px;color:#aaa;font-size:10px}.day:before,.day:after{content:"";height:1px;background:#eee;flex:1}
+.row{display:flex;margin:7px 0}.row.me{justify-content:flex-end}.bubble{max-width:78%;padding:10px 13px;border-radius:18px;line-height:1.38;font-size:14px;white-space:pre-wrap}.row.them .bubble{background:#efefef;border-bottom-left-radius:6px}.row.me .bubble{background:#ddd0ed;border-bottom-right-radius:6px}.meta{font-size:9px;color:#aaa;margin:3px 5px 0}.row.me .meta{text-align:right}
+.composer{position:fixed;bottom:0;width:100%;max-width:480px;height:62px;border-top:1px solid #ddd;background:#fff;display:flex;align-items:center;gap:9px;padding:9px 12px}.round,.send{border:0;background:none;font-size:24px}.input{flex:1;background:#f1f1f1;color:#999;border-radius:22px;padding:10px 15px;font-size:14px}
 @media(min-width:481px){body{padding:20px 0}.app{min-height:calc(100vh - 40px);box-shadow:0 8px 40px #bbb;border-radius:18px;overflow:hidden}.composer{position:absolute;border-radius:0 0 18px 18px}}
